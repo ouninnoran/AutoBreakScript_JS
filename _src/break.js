@@ -10,11 +10,11 @@
  *@param Class Class=["",""] ""の中に改行したいタグのclassを指定してください。
  *@param Elem Elem=["",""] ""の中に改行したいタグ名を指定してください。
 */
-window.onload = function(Id,Elem,Class){
+window.addEventListener("load",()=>{
     Id=["id",""];Elem=["span",""];Class=["class",""];
     console.log("入力された文字列と配列",Id,Elem,Class);
     fordata(Id,Elem,Class);
-}
+})
 function fordata(Id,Elem,Class){
     const idCount = Id.length;
     const elemCount = Elem.length
